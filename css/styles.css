@@ -127,17 +127,16 @@ button:hover {
 }
 
 .notification-container {
-    position: fixed;
-    top: 90px;
-    left: 20px; /* или right: 20px, если хотите справа */
-    width: 300px;
-    z-index: 2147483647 !important; /* Максимальное значение z-index, которое возможно */
-    pointer-events: auto; /* Если хотите, чтобы уведомления были интерактивными */
+  position: fixed;
+  bottom: 20px;
+  left: 20px; /* или right: 20px, если хотите справа */
+  width: 300px;
+  z-index: 2147483647 !important; /* Максимальное значение z-index, которое возможно */
+  pointer-events: auto; /* Если хотите, чтобы уведомления были интерактивными */
 }
 
 .notification-critical {
     background-color: #f44336;
-    top: 90px;
     color: white;
     padding: 16px;
     margin-bottom: 10px;
@@ -150,7 +149,6 @@ button:hover {
 
 .notification-light {
     background-color: #f0f0f0;
-    top: 90px;
     color: #333;
     padding: 16px;
     margin-bottom: 10px;
@@ -166,7 +164,7 @@ button:hover {
 }
 
 .notification {
-    top: 70px; /* Изменено на 50px для создания отступа */
+    bottom: 0;
     background-color: #f44336;
     color: white;
     padding: 16px;
@@ -259,7 +257,7 @@ button:hover {
     .notification-container {
         width: 90%;
         left: 5%;
-        top: 10px;
+        bottom: 10px;
     }
 }
 
