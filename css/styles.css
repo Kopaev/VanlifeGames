@@ -21,6 +21,11 @@ h3 {
     margin-bottom: 20px;
 }
 
+.language-switcher {
+    text-align: right;
+    margin-bottom: 10px;
+}
+
 .time-budget {
     display: flex;
     justify-content: space-between;
