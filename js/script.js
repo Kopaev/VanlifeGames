@@ -529,6 +529,67 @@ function updateTexts() {
         dayLabel.innerText = window.translations.day;
     }
 
+    const budgetLabel = document.getElementById('budget-label');
+    if (budgetLabel && window.translations.budget) {
+        budgetLabel.innerText = window.translations.budget;
+    }
+
+    // Статусы ресурсов
+    const waterLabel = document.getElementById('water-label');
+    if (waterLabel && window.translations.water) {
+        waterLabel.innerText = window.translations.water;
+    }
+    const toiletLabel = document.getElementById('toilet-label');
+    if (toiletLabel && window.translations.toilet) {
+        toiletLabel.innerText = window.translations.toilet;
+    }
+    const gasLabel = document.getElementById('gas-label');
+    if (gasLabel && window.translations.gas) {
+        gasLabel.innerText = window.translations.gas;
+    }
+    const fridgeLabel = document.getElementById('fridge-label');
+    if (fridgeLabel && window.translations.fridge) {
+        fridgeLabel.innerText = window.translations.fridge;
+    }
+    const dieselLabel = document.getElementById('diesel-label');
+    if (dieselLabel && window.translations.diesel) {
+        dieselLabel.innerText = window.translations.diesel;
+    }
+    const laundryLabel = document.getElementById('laundry-label');
+    if (laundryLabel && window.translations.laundry) {
+        laundryLabel.innerText = window.translations.laundry;
+    }
+
+    // Кнопки действий
+    const earnButton = document.getElementById('earn-money-button');
+    if (earnButton && window.translations.earn_money) {
+        earnButton.innerText = window.translations.earn_money;
+    }
+    const fillWaterBtn = document.getElementById('fill-water-btn');
+    if (fillWaterBtn && window.translations.fill) {
+        fillWaterBtn.innerText = window.translations.fill;
+    }
+    const emptyToiletBtn = document.getElementById('empty-toilet-btn');
+    if (emptyToiletBtn && window.translations.empty) {
+        emptyToiletBtn.innerText = window.translations.empty;
+    }
+    const fillGasBtn = document.getElementById('fill-gas-btn');
+    if (fillGasBtn && window.translations.fill) {
+        fillGasBtn.innerText = window.translations.fill;
+    }
+    const fillFridgeBtn = document.getElementById('fill-fridge-btn');
+    if (fillFridgeBtn && window.translations.stock) {
+        fillFridgeBtn.innerText = window.translations.stock;
+    }
+    const fillDieselBtn = document.getElementById('fill-diesel-btn');
+    if (fillDieselBtn && window.translations.refuel) {
+        fillDieselBtn.innerText = window.translations.refuel;
+    }
+    const doLaundryBtn = document.getElementById('do-laundry-btn');
+    if (doLaundryBtn && window.translations.wash) {
+        doLaundryBtn.innerText = window.translations.wash;
+    }
+
     // Пример для других текстов
     const startEngineButton = document.getElementById('engine-button');
     if (startEngineButton && window.translations.start_engine) {
