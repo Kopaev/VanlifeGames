@@ -495,7 +495,23 @@ document.addEventListener('DOMContentLoaded', function() {
     } else {
         console.error('Translation URL not found. Unable to load translations.');
     }
+
+    const select = document.getElementById('language-select');
+    if (select) {
+        select.value = lang;
+        select.addEventListener('change', function() {
+            changeLanguage(this.value);
+        });
+    }
 });
+
+function changeLanguage(newLang) {
+    if (typeof vanlifeGameConfig !== 'undefined') {
+        vanlifeGameConfig.translationUrl = `languages/lang_${newLang}.json`;
+    }
+    document.documentElement.setAttribute('lang', newLang);
+    loadTranslations(`languages/lang_${newLang}.json`);
+}
 
 function loadTranslations(url) {
     return fetch(url)

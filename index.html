@@ -11,10 +11,19 @@
       translationUrl: `languages/lang_${lang}.json`,
       messagesUrl: 'languages/messages.json'
     };
+    document.documentElement.lang = lang;
   </script>
 </head>
 <body>
   <div class="container">
+    <div class="language-switcher">
+      <label for="language-select">Language:</label>
+      <select id="language-select">
+        <option value="en">English</option>
+        <option value="ru">Русский</option>
+        <option value="es">Español</option>
+      </select>
+    </div>
     <h3 id="game-title">My Vanlife</h3>
     <div class="time-budget">
       <div class="left-section">
