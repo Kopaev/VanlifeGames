@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vanlife Game</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    const lang = (navigator.language || 'en').slice(0,2);
+    const vanlifeGameConfig = {
+      translationUrl: `languages/lang_${lang}.json`,
+      messagesUrl: 'languages/messages.json'
+    };
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h3 id="game-title">My Vanlife</h3>
+    <div class="time-budget">
+      <div class="left-section">
+        <div id="time-display">
+          <span class="label" id="day-label">Day</span>
+          <span id="day-time">1, 00:00</span>
+        </div>
+        <div id="weather-display">
+          <span id="weather-status">🌙 Night</span>
+        </div>
+      </div>
+      <div class="center-section">
+        <div id="money-display">
+          <span class="label">Budget:</span>
+          <span id="budget-amount">1500.00</span> €
+        </div>
+        <div id="voltage-display">🔋 12.9 V (0%)</div>
+      </div>
+      <div class="right-section">
+        <button onclick="earnMoney();">Earn Money</button>
+      </div>
+    </div>
+
+    <div class="time-budget-mobile" id="mobile-display"></div>
+
+    <div class="game-area">
+      <div class="pet">🚐...</div>
+      <div class="stats">
+        <div class="stat-item">
+          <span class="label">Water 🏠:</span>
+          <div class="bar-container"><div class="bar" id="water-bar">100%</div></div>
+          <button onclick="fillWater();">Fill</button>
+        </div>
+        <div class="stat-item">
+          <span class="label">Toilet 🚽:</span>
+          <div class="bar-container"><div class="bar" id="toilet-bar"><span id="toilet-indicator" class="indicator">⚠️</span>0%</div></div>
+          <button onclick="emptyToilet();">Empty</button>
+        </div>
+        <div class="stat-item">
+          <span class="label">Gas 💨:</span>
+          <div class="bar-container"><div class="bar" id="gas-bar">100%</div></div>
+          <button onclick="fillGas();">Fill</button>
+        </div>
+        <div class="stat-item">
+          <span class="label">Fridge 🛂:</span>
+          <div class="bar-container"><div class="bar" id="fridge-bar">100%</div></div>
+          <button onclick="fillFridge();">Stock</button>
+        </div>
+        <div class="stat-item">
+          <span class="label">Diesel ⛽️:</span>
+          <div class="bar-container"><div class="bar" id="diesel-bar">100%</div></div>
+          <button onclick="fillDiesel();">Refuel</button>
+        </div>
+        <div class="stat-item">
+          <span class="label">Laundry 🧺:</span>
+          <div class="bar-container"><div class="bar" id="laundry-bar">0%</div></div>
+          <button onclick="doLaundry();">Wash</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button id="engine-button" style="display:none" onclick="startEngine();">Start Engine</button>
+  <button id="camping-button" style="display:none" onclick="goCamping();">Go Camping (25 euros)</button>
+
+  <div id="notification-container" class="notification-container"></div>
+  <script src="js/script.js"></script>
+  <script src="js/telegram.js"></script>
+</body>
+</html>
+
