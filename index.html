@@ -16,14 +16,14 @@
 </head>
 <body>
   <div class="container">
-    <div class="language-switcher">
-      <label for="language-select">Language:</label>
-      <select id="language-select">
-        <option value="en">English</option>
-        <option value="ru">Русский</option>
-        <option value="es">Español</option>
-      </select>
-    </div>
+      <div class="language-switcher">
+        <label id="language-label" for="language-select">Language:</label>
+        <select id="language-select">
+          <option value="en">English</option>
+          <option value="ru">Русский</option>
+          <option value="es">Español</option>
+        </select>
+      </div>
     <h3 id="game-title">My Vanlife</h3>
     <div class="time-budget">
       <div class="left-section">
@@ -37,13 +37,13 @@
       </div>
       <div class="center-section">
         <div id="money-display">
-          <span class="label">Budget:</span>
+          <span class="label" id="budget-label">Budget:</span>
           <span id="budget-amount">1500.00</span> €
         </div>
         <div id="voltage-display">🔋 12.9 V (0%)</div>
       </div>
       <div class="right-section">
-        <button onclick="earnMoney();">Earn Money</button>
+        <button id="earn-button" onclick="earnMoney();">Earn Money</button>
       </div>
     </div>
 
@@ -53,34 +53,34 @@
       <div class="pet">🚐...</div>
       <div class="stats">
         <div class="stat-item">
-          <span class="label">Water 🏠:</span>
+          <span class="label" id="water-label">Water 🏠:</span>
           <div class="bar-container"><div class="bar" id="water-bar">100%</div></div>
-          <button onclick="fillWater();">Fill</button>
+          <button id="fill-water-button" onclick="fillWater();">Fill</button>
         </div>
         <div class="stat-item">
-          <span class="label">Toilet 🚽:</span>
+          <span class="label" id="toilet-label">Toilet 🚽:</span>
           <div class="bar-container"><div class="bar" id="toilet-bar"><span id="toilet-indicator" class="indicator">⚠️</span>0%</div></div>
-          <button onclick="emptyToilet();">Empty</button>
+          <button id="empty-toilet-button" onclick="emptyToilet();">Empty</button>
         </div>
         <div class="stat-item">
-          <span class="label">Gas 💨:</span>
+          <span class="label" id="gas-label">Gas 💨:</span>
           <div class="bar-container"><div class="bar" id="gas-bar">100%</div></div>
-          <button onclick="fillGas();">Fill</button>
+          <button id="fill-gas-button" onclick="fillGas();">Fill</button>
         </div>
         <div class="stat-item">
-          <span class="label">Fridge 🛂:</span>
+          <span class="label" id="fridge-label">Fridge 🛂:</span>
           <div class="bar-container"><div class="bar" id="fridge-bar">100%</div></div>
-          <button onclick="fillFridge();">Stock</button>
+          <button id="fill-fridge-button" onclick="fillFridge();">Stock</button>
         </div>
         <div class="stat-item">
-          <span class="label">Diesel ⛽️:</span>
+          <span class="label" id="diesel-label">Diesel ⛽️:</span>
           <div class="bar-container"><div class="bar" id="diesel-bar">100%</div></div>
-          <button onclick="fillDiesel();">Refuel</button>
+          <button id="refuel-diesel-button" onclick="fillDiesel();">Refuel</button>
         </div>
         <div class="stat-item">
-          <span class="label">Laundry 🧺:</span>
+          <span class="label" id="laundry-label">Laundry 🧺:</span>
           <div class="bar-container"><div class="bar" id="laundry-bar">0%</div></div>
-          <button onclick="doLaundry();">Wash</button>
+          <button id="wash-laundry-button" onclick="doLaundry();">Wash</button>
         </div>
       </div>
     </div>

@@ -534,29 +534,35 @@ function loadTranslations(url) {
 }
 
 function updateTexts() {
-    // Пример обновления текстов на странице
-    const gameTitle = document.getElementById('game-title');
-    if (gameTitle && window.translations.vanlife_title) {
-        gameTitle.innerText = window.translations.vanlife_title;
-    }
+    const mapping = {
+        'game-title': 'vanlife_title',
+        'day-label': 'day',
+        'language-label': 'language',
+        'budget-label': 'budget',
+        'water-label': 'water',
+        'toilet-label': 'toilet',
+        'gas-label': 'gas',
+        'fridge-label': 'fridge',
+        'diesel-label': 'diesel',
+        'laundry-label': 'laundry',
+        'earn-button': 'earn_money',
+        'fill-water-button': 'fill',
+        'empty-toilet-button': 'empty',
+        'fill-gas-button': 'fill',
+        'fill-fridge-button': 'stock',
+        'refuel-diesel-button': 'refuel',
+        'wash-laundry-button': 'wash',
+        'engine-button': 'start_engine',
+        'camping-button': 'go_camping'
+    };
 
-    const dayLabel = document.getElementById('day-label');
-    if (dayLabel && window.translations.day) {
-        dayLabel.innerText = window.translations.day;
-    }
-
-    // Пример для других текстов
-    const startEngineButton = document.getElementById('engine-button');
-    if (startEngineButton && window.translations.start_engine) {
-        startEngineButton.innerText = window.translations.start_engine;
-    }
-
-    const campingButton = document.getElementById('camping-button');
-    if (campingButton && window.translations.go_camping) {
-        campingButton.innerText = window.translations.go_camping;
-    }
-
-    // Добавьте другие элементы, которые нужно перевести
+    Object.keys(mapping).forEach(id => {
+        const el = document.getElementById(id);
+        const key = mapping[id];
+        if (el && window.translations[key]) {
+            el.innerText = window.translations[key];
+        }
+    });
 }
 
 
