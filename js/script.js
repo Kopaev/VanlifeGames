@@ -42,6 +42,9 @@ function incrementTime() {
         money -= 50;
         if (money < 0) money = 0;
         updateStats();
+        if (window.tgGame && typeof tgGame.setScore === 'function') {
+            tgGame.setScore(Math.floor(money));
+        }
     }
     updateTimeDisplay();
 }
