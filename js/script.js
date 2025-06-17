@@ -468,22 +468,6 @@ document.addEventListener("DOMContentLoaded", function() {
     observeChanges();
 });
 
-function updateMobileDisplay() {
-    const timeDisplay = document.getElementById("time-display");
-    const weatherDisplay = document.getElementById("weather-status");
-    const voltageDisplay = document.getElementById("voltage-display");
-    const moneyDisplay = document.getElementById("money-display");
-
-    const time = timeDisplay ? timeDisplay.innerText : 'N/A';
-    const weather = weatherDisplay ? weatherDisplay.innerText : 'N/A';
-    const voltage = voltageDisplay ? voltageDisplay.innerText : 'N/A';
-    const money = moneyDisplay ? moneyDisplay.innerText : 'N/A';
-
-    const mobileDisplay = document.getElementById("mobile-display");
-    if (mobileDisplay) {
-        mobileDisplay.innerHTML = `<span class="mobile-time">${time}</span><br>${weather}<br>${voltage}<br>${money}`;
-    }
-}
 
 // ============================== Перевод на другие языки ==============================
 
@@ -660,18 +644,6 @@ window.onload = function() {
 };
 
 // Call saveGameState when game values or resources are updated
-function incrementTime() {
-    minutes += 60;
-    if (minutes >= 60) {
-        minutes = 0;
-        hours += 1;
-    }
-    if (hours >= 24) {
-        hours = 0;
-        days += 1;
-    }
-    saveGameState();  // Save the updated game state and resources
-}
 
 // Update the game's UI to reflect the current state of the game, including resources
 function updateUI() {
