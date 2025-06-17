@@ -1,0 +1,116 @@
+msgid "Day"
+msgstr "День"
+
+msgid "Not enough money!"
+msgstr "Недостаточно денег!"
+
+msgid "You did the laundry!"
+msgstr "Вы постирали вещи!"
+
+msgid "The toilet is already empty!"
+msgstr "Туалет уже пустой!"
+
+msgid "☀️ Sunny"
+msgstr "☀️ Солнечно"
+
+msgid "🌙 Night"
+msgstr "🌙 Ночь"
+
+msgid "🌧️ Rainy"
+msgstr "🌧️ Дождливо"
+
+msgid "❓ Unknown"
+msgstr "❓ Неизвестно"
+
+msgid "Let the engine run for an hour!"
+msgstr "Часочек двигателем поторохтим!"
+
+msgid "Camping is always good, but expensive!"
+msgstr "В кемпинге всегда хорошо, только дороговато!"
+
+msgid "Not enough money for camping!"
+msgstr "Недостаточно денег для кемпинга!"
+
+msgid "Budget:"
+msgstr "Бюджет:"
+
+msgid "Phew, finally empty! The toilet is emptied."
+msgstr "Фууу, наконец-то свободно! Туалет опустошен."
+
+msgid "Flushed like a pro! The toilet shines!"
+msgstr "Слили как профи! Туалет сияет!"
+
+msgid "Goodbye toilet troubles! Now it's fresh!"
+msgstr "Пока, туалетные проблемы! Теперь свежесть!"
+
+msgid "Mission accomplished! The toilet is safe."
+msgstr "Миссия выполнена! Туалет в безопасности."
+
+msgid "You are a flush master! Another success."
+msgstr "Ты мастер слива! Очередной успех."
+
+msgid "Farewell, adventure aroma! The toilet is emptied."
+msgstr "Прощай, аромат приключений! Туалет опустошен."
+
+msgid "Cleanliness and order restored. The toilet is happy!"
+msgstr "Чистота и порядок восстановлены. Туалет доволен!"
+
+msgid "The toilet is empty and ready for new challenges!"
+msgstr "Туалет свободен и готов к новым вызовам!"
+
+msgid "Job done! Now you can breathe freely."
+msgstr "Работа сделана! Теперь можно дышать свободно."
+
+msgid "Toilet emptied, day saved!"
+msgstr "Туалет опустошен, день спасён!"
+
+msgid "Goodbye toilet troubles! Now it s fresh!"
+msgstr "Прощай, туалетные проблемы! Теперь свежесть!"
+
+msgid "My Vanlife"
+msgstr "Мой Ванлайф"
+
+msgid "Water 🏠:"
+msgstr "Вода 🏠:"
+
+msgid "Toilet 🚽:"
+msgstr "Туалет 🚽:"
+
+msgid "Gas 💨:"
+msgstr "Газ 💨:"
+
+msgid "Fridge 🛂:"
+msgstr "Холодильник 🛂:"
+
+msgid "Diesel ⛽️:"
+msgstr "Дизель ⛽️:"
+
+msgid "Laundry 🧺:"
+msgstr "Грязное бельё 🧺:"
+
+msgid "Fill"
+msgstr "Заполнить"
+
+msgid "Empty"
+msgstr "Опустошить"
+
+msgid "Stock"
+msgstr "Закупить"
+
+msgid "Refuel"
+msgstr "Заправить"
+
+msgid "Wash"
+msgstr "Постирать"
+
+msgid "Earn Money"
+msgstr "Заработать деньги"
+
+msgid "Start Engine"
+msgstr "Завести двигатель"
+
+msgid "Go Camping (25 euros)"
+msgstr "Встать на кемпинг (25 евро)"
+
+msgid "toilet_already_empty"
+msgstr "Туалет уже пустой!"

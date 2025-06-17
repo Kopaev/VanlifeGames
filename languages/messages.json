@@ -1,0 +1,15 @@
+{
+    "emptyToiletMessages": [
+        "Phew, finally empty! The toilet is emptied.",
+        "Flushed like a pro! The toilet shines!",
+        "Goodbye toilet troubles! Now it s fresh!",
+        "Mission accomplished! The toilet is safe.",
+        "You are a flush master! Another success.",
+        "Farewell, adventure aroma! The toilet is emptied.",
+        "Cleanliness and order restored. The toilet is happy!",
+        "The toilet is empty and ready for new challenges!",
+        "Job done! Now you can breathe freely.",
+        "Toilet emptied, day saved!"
+    ],
+    "toiletAlreadyEmpty": "The toilet is already empty!"
+}
